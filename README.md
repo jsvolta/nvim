@@ -18,6 +18,7 @@ External Requirements:
 - Clipboard tool (xclip/xsel/win32yank or other depending on platform)
 - A [Nerd Font](https://www.nerdfonts.com/): optional, provides various icons
   - if you have it set `vim.g.have_nerd_font` in `init.lua` to true
+- [vscode-langservers-extracted](https://github.com/hrsh7th/vscode-langservers-extracted)
 
 ### Clone My Config
 <details><summary> Linux and Mac </summary>
