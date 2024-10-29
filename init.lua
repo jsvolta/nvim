@@ -6,3 +6,5 @@ require "yiska.options"
 require "yiska.autocmds"
 require "lazy_init"
 require "yiska.keymaps"
+
+require 'nvim-treesitter.install'.compilers = { "cl", "clang", "gcc" }
