@@ -149,6 +149,9 @@ return {
                     },
                 },
             },]] --
+            jdtls = {
+                settings = require 'jaden.javaLspSettings'
+            }
         }
 
         -- Ensure the servers and tools above are installed
