@@ -1,4 +1,4 @@
-local home = os.getenv('HOME')
+local home = os.getenv("HOME")
 
 return {
     java = {
@@ -12,7 +12,7 @@ return {
             },
         },
         signatureHelp = { enabled = true },
-        contentProvider = { preferred = 'fernflower' },  -- Use fernflower to decompile library code
+        contentProvider = { preferred = "fernflower" }, -- Use fernflower to decompile library code
         -- Specify any completion options
         completion = {
             favoriteStaticMembers = {
@@ -22,31 +22,32 @@ return {
                 "org.junit.jupiter.api.Assertions.*",
                 "java.util.Objects.requireNonNull",
                 "java.util.Objects.requireNonNullElse",
-                "org.mockito.Mockito.*"
+                "org.mockito.Mockito.*",
             },
             filteredTypes = {
                 "com.sun.*",
                 "io.micrometer.shaded.*",
                 "java.awt.*",
-                "jdk.*", "sun.*",
+                "jdk.*",
+                "sun.*",
             },
         },
         -- Specify any options for organizing imports
         sources = {
             organizeImports = {
-                starThreshold = 9999;
-                staticStarThreshold = 9999;
+                starThreshold = 9999,
+                staticStarThreshold = 9999,
             },
         },
         -- How code generation should act
         codeGeneration = {
             toString = {
-                template = "${object.className}{${member.name()}=${member.value}, ${otherMembers}}"
+                template = "${object.className}{${member.name()}=${member.value}, ${otherMembers}}",
             },
             hashCodeEquals = {
                 useJava7Objects = true,
             },
             useBlocks = true,
         },
-    }
+    },
 }

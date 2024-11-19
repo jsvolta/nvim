@@ -1,6 +1,6 @@
 -- [[ Behavior ]]
 vim.opt.backup = false
-vim.opt.clipboard = 'unnamedplus'
+vim.opt.clipboard = "unnamedplus"
 vim.opt.ignorecase = true
 vim.opt.incsearch = true
 -- vim.opt.scroll
@@ -9,16 +9,16 @@ vim.opt.smartcase = true
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.swapfile = false
-vim.opt.tagcase = 'followscs'
+vim.opt.tagcase = "followscs"
 -- vim.opt.timeoutlen
 vim.opt.updatetime = 250
 vim.opt.visualbell = true
 vim.opt.wrapscan = false
 
--- [[ Format ]] 
+-- [[ Format ]]
 vim.opt.autoindent = true
 vim.opt.breakindent = true
-vim.opt.colorcolumn = {80}
+vim.opt.colorcolumn = { 80 }
 -- vim.opt.copyindent
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 4
@@ -32,10 +32,10 @@ vim.opt.tabstop = 4
 vim.opt.cursorline = true
 vim.opt.hlsearch = true
 vim.opt.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 vim.opt.number = true
 vim.opt.scrolloff = 10
-vim.opt.signcolumn = 'yes' 
+vim.opt.signcolumn = "yes"
 vim.opt.wrap = false
 
 -- [[ Misc ]]

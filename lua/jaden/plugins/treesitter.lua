@@ -1,9 +1,9 @@
 return {
-    'nvim-treesitter/nvim-treesitter',
-    build = ':TSUpdate',
-    main = 'nvim-treesitter.configs',
+    "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
+    main = "nvim-treesitter.configs",
     opts = {
-        ensure_installed = { 'lua', 'luadoc', 'vim', 'vimdoc' },
+        ensure_installed = { "lua", "luadoc", "vim", "vimdoc" },
         auto_install = true,
         highlight = {
             enable = true,
