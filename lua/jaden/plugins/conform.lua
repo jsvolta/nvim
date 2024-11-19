@@ -19,13 +19,19 @@ return {
     opts = {
         -- Define your formatters
         formatters_by_ft = {
+            javascript = { "prettier" },
+            typescript = { "prettier" },
+            javascriptreact = { "prettier" },
+            typescriptreact = { "prettier" },
+            svelte = { "prettier" },
+            css = { "prettier" },
+            html = { "prettier" },
+            json = { "prettier" },
+            yaml = { "prettier" },
+            markdown = { "prettier" },
+            graphql = { "prettier" },
             lua = { "stylua" },
             python = { "black" },
-            html = { "prettier" },
-            css = { "prettier" },
-            javascript = { "prettier" },
-            javascriptreact = { "prettier" },
-            typescript = { "prettier" },
         },
         -- Set default options
         default_format_opts = {
