@@ -19,12 +19,17 @@ end)
 
 -- LSP
 map('n', '<leader>q', builtin.diagnostics)
-map('n', 'gd', builtin.lsp_definitions, { buffer = 0 })
-map('n', 'gr', builtin.lsp_references, { buffer = 0 })
-map('n', 'gD', vim.lsp.buf.declaration, { buffer = 0 })
-map('n', 'gT', vim.lsp.buf.type_definition, { buffer = 0 })
-map('n', 'K', vim.lsp.buf.hover, { buffer = 0 })
-map('n', '<leader>ca', vim.lsp.buf.code_action, { buffer = 0 })
+map('n', 'gd', builtin.lsp_definitions)
+map('n', 'gr', builtin.lsp_references)
+map('n', 'gD', vim.lsp.buf.declaration)
+map('n', 'gI', builtin.lsp_implementations)
+map('n', 'gT', vim.lsp.buf.type_definition)
+map('n', 'K', vim.lsp.buf.hover)
+map('n', '<leader>D', builtin.lsp_type_definitions)
+map('n', '<leader>ds', builtin.lsp_document_symbols)
+map({ 'n', 'x' }, '<leader>ca', vim.lsp.buf.code_action)
+map('n', '<leader>ws', builtin.lsp_dynamic_workspace_symbols)
+map('n', '<leader>rn', vim.lsp.buf.rename)
 
 -- [[ MISC ]] --
 map('n', '<ESC>', ':nohl<CR>')

@@ -5,7 +5,7 @@ return {
     local configs = require 'nvim-treesitter.configs'
 
     configs.setup {
-      ensure_installed = { 'c', 'lua', 'luadoc', 'markdown', 'vim', 'vimdoc', 'query' },
+      ensure_installed = { 'c', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'vim', 'vimdoc', 'query' },
       sync_install = false,
       auto_install = true,
       highlight = {

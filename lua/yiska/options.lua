@@ -1,4 +1,5 @@
 local set = vim.opt
+vim.g.have_nerd_font = true
 
 -- [[ Behavior ]]
 set.clipboard = 'unnamedplus'
